@@ -1,0 +1,463 @@
+:root{
+    --left : 0px
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contener{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 120px;
+}
+
+.contenerCarousel{
+    margin-left: 60px;
+}
+
+#calendrier{
+    display: flex;
+    overflow: hidden;
+    width: 502.312px;
+    
+
+}
+
+table{
+    position: relative;
+    left: var(--left);
+    transition: all .40s;
+}
+
+thead{
+    border: solid;
+}
+
+td{
+    padding: 10px 20px;
+}
+th{
+    padding: 10px 20px ;
+}
+
+caption{
+    font-size: 30px;
+    font-weight: bold;
+}
+.fleche{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+::-webkit-scrollbar{
+
+    width: 3px;
+}
+::-webkit-scrollbar-thumb   {
+
+    background-color: rgb(118, 118, 118);
+}
+
+
+
+
+
+
+
+
+
+/*
+
+css .add_tulaire
+
+*/
+
+:root{
+    --blanc: #fff;
+    --noir: #000505;
+    --violet-claire: #5d5d81;
+    --violet-fonce: #3B3355;
+    --cross-height-width : 35px;
+    --plus-height-width : 40px;
+    --signArrow-height: 50%;
+    --boxWidth: 400px;
+}
+
+
+.plus{
+    position: fixed;
+    top: 10px;
+    left: 600px;
+}
+
+
+
+/*Icon de fermeture*/
+
+.cross-sign{
+    cursor: pointer;
+    height: var(--cross-height-width);
+    width: var(--cross-height-width);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    transition: all 400ms ease-in-out;
+    border: none;
+    outline: none;
+}
+
+.cross-sign .v{
+    background-color: #5d5d81;
+    height: var(--signArrow-height);
+    width: calc(var(--cross-height-width) / 16);
+    transform: rotate(45deg);
+    border-radius: 5px;
+    transition: all 200ms ease-in-out;
+}
+
+.cross-sign .h{
+    background-color: #5d5d81;
+    height: var(--signArrow-height);
+    width: calc(var(--cross-height-width) / 16);
+    position: absolute;
+    border-radius: 5px;
+    transform: rotate(-45deg);
+    transition: all 200ms ;
+}
+
+.cross-sign:hover{
+    background-color: #f30202;
+}
+
+.cross-sign:hover > .h{
+    background-color: var(--blanc);
+}
+.cross-sign:hover > .v{
+    background-color: var(--blanc);
+}
+
+/*FiN*/
+
+.add_t{
+    width: 100%;
+}
+
+
+
+
+
+/*liste*/
+
+
+
+.vide{
+    position: fixed;
+    left: -500px;
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.logo img {
+    margin-left: 760px;
+    margin-top: 60px;
+    width: 300px;
+    height: 100px;
+}
+
+body {
+    margin: 0px;
+}
+
+header {
+    background-image: url(/asset/Image/A\ Tour\ of\ My\ Work\ Space\ —\ Lily\ Chérie.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 950px;
+}
+
+.contener {
+    margin-left: 320px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(0, 0, 0, 0.158);
+    width: 620px;
+    height: 500px;
+    border-radius: 4px;
+}
+
+#calendrier {
+    color: white;
+    width: 502.312px;
+}
+
+#plus {
+    margin-left: 50px;
+}
+
+#liste {
+    background-color: rgba(216, 194, 163, 0.963);
+    width: 600px;
+    height: 625px;
+    border-radius: 5px;
+    overflow: auto;
+    margin-right: -560px;
+    margin-left: 200px;
+    padding-left: 50px;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(61, 61, 61);
+    border-radius: 3px;
+}
+
+#liste h4 {
+    font-family: Bebas Neue;
+    font-size: 28px;
+}
+
+#liste h5 {
+    font-size: 18px;
+}
+
+#liste h6 {
+    font-size: 18px;
+    font-family: Bebas Neue;
+}
+
+#liste ul li {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    border-radius: 4px;
+    width: 280px;
+    height: 155px;
+    color: white;
+    margin-top: 7px;
+    padding-left: 20px;
+    padding-top: 1px;
+}
+
+#liste button {
+    background-color: #688553;
+    color: #000505;
+    border-width: 1px;
+}
+
+/*----------------------MODIFICATION FAIT PAR ANDHY SUR LE FORMULAIRE------------------*/
+
+/*Suppression des attributs overflow et box-shadow de la box*/
+
+:root {
+    /*à mettre au debut du fichier css*/
+    --blanc: #fff;
+    --noir: #000505;
+    --violet-claire: #5d5d81;
+    --violet-fonce: #3B3355;
+    --cross-height-width: 35px;
+    --plus-height-width: 40px;
+    --signArrow-height: 50%;
+    --boxWidth: 400px;
+}
+
+.plus {
+    position: absolute;
+    top: 0;
+    left: 150px;
+    Z-INDEX: 10;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+/*Icon de fermeture*/
+
+.cross-sign {
+    cursor: pointer;
+    height: var(--cross-height-width);
+    width: var(--cross-height-width);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    transition: all 400ms ease-in-out;
+    border: none;
+    outline: none;
+    border-radius: 0 10px 0 0;
+}
+
+.cross-sign .v {
+    background-color: #000000;
+    height: var(--signArrow-height);
+    width: calc(var(--cross-height-width) / 16);
+    transform: rotate(45deg);
+    border-radius: 5px;
+    transition: all 200ms ease-in-out;
+}
+
+.cross-sign .h {
+    background-color: #000000;
+    height: var(--signArrow-height);
+    width: calc(var(--cross-height-width) / 16);
+    position: absolute;
+    border-radius: 5px;
+    transform: rotate(-45deg);
+    transition: all 200ms;
+}
+
+.cross-sign:hover {
+    background-color: #f30202;
+}
+
+.cross-sign:hover > .h {
+    background-color: var(--blanc);
+}
+
+.cross-sign:hover > .v {
+    background-color: var(--blanc);
+}
+
+.box > .triangle {
+    height: 50px;
+    width: 50px;
+    transform: rotate(45deg);
+    background-color: #7f664e;
+    position: absolute;
+    left: -20px;
+    top: 170px;
+    z-index: -10;
+}
+
+/*--------------------------------------FIN----------------------------------------------*/
+
+/*Modification de la page de connection*/
+
+.box {
+    top: 0;
+    position: absolute;
+    border: none;
+    width: var(--boxWidth);
+    /*overflow: hidden; enlevé*/
+    border-radius: 10px;
+    padding: 15px 20px;
+    background-color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    /*box shadow enlevé*/
+    background-color: #7f664e;
+}
+
+.box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: var(--blanc);
+    text-align: left;
+    font-size: 23px;
+    text-transform: uppercase;
+}
+
+.box .input_box {
+    position: relative;
+}
+
+.box .input_box_date input,
+.box .input_box_hour input,
+.box .input_box input {
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--blanc);
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    background: transparent;
+    border-bottom: 1px solid var(--blanc);
+}
+
+.box .input_box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    letter-spacing: 1px;
+    padding: 10px 0px;
+    font-size: 16px;
+    color: var(--blanc);
+    transition: .5s;
+}
+
+.box .input_box input:focus ~ label,
+.box .input_box input:valid ~ label {
+    top: -18px;
+    color: white;
+    font-size: 12px;
+}
+
+.box .input_box_desc textarea {
+    outline: none;
+    width: 88%;
+    resize: none;
+    padding: 12px 20px;
+}
+
+.box button {
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 10px 12px;
+    background-color: rgb(29, 29, 29);
+    color: var(--blanc);
+    margin-block: 20px;
+    transition: .5s;
+}
+
+.box button:hover {
+    background-color: black;
+}
+
+.vide {
+    position: fixed;
+    left: -500px;
+    top: 300px;
+}
+
+.paVide {
+    overflow: hidden;
+}
+
+.fait {
+    color: #b8b8b8;
+    background-color: #515151;
+}
+
+.suprimer {
+    display: none;
+}
+
+.jourPris {
+    border-radius: 40px;
+    background-color: #000000;
+}
+
+.jourpaPris {
+    color: #b40a0a;
+    border-radius: 40px;
+    background-color: #2828db;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="asset/css/style.css">
+        <title>To do liste</title>
+    </head>
+    <body>
+
+        <header>
+
+            <div class="logo">
+
+
+                <img  src="asset/Image/to do liste-Récupé.png" alt="le logo">
+
+            </div>
+            
+
+
+
+
+            <svg id="plus" xmlns="http://www.w3.org/2000/svg" width="70" height="60" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+              </svg> 
+    
+            <div class="plus">
+                
+
+                <div class="box">
+
+                    <div class="triangle"></div>
+                    <!--Icones de fermeture-->
+        
+                    <div class="cross-sign" onclick="closeBox()" >
+                        <div class="v"></div>
+                        <div class="h"></div>
+                    </div>
+        
+                    <!--Ajout de tâche-->
+                    <h2>Ajouter une tâche</h2>
+                    <div action="" class="add_t">
+                        
+                        <div class="input_box">
+                            <input type="text" id="titre" name="title" required>
+                            <label for="title">Titre</label>
+                        </div>
+                        
+                        <div class="input_box date">
+                            <input type="date" id="date" name="date" required>
+                        </div>
+        
+                        <div class="input_box hour">
+                            <input id="heure" type="time" name="hour">
+                        </div>
+        
+                        <div class="input_box_desc">
+                            <textarea id="description" name="description" placeholder="Décrivez votre tache"></textarea>
+                        </div>
+        
+                        <button id="envoyer">Ajouter</button>
+        
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="contener">
+                <div class="contenerCarousel">
+                    <div class="fleche">
+                        <svg id="precedentB" xmlns="http://www.w3.org/2000/svg" width="45" height="35" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
+                            <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1z"/>
+                        </svg>
+
+
+                        <svg id="suivantB" xmlns="http://www.w3.org/2000/svg" width="45" height="35" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                            <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z"/>
+                        </svg>
+                    </div>
+                    
+                    <div id="calendrier"></div>
+                </div>
+                
+    
+                <div id="liste"></div>
+            </div>
+        
+        </header>
+
+        <script src="asset/js/app.js" ></script>
+    </body>
+</html>
